@@ -1,0 +1,198 @@
+#root {
+  max-width: 1280px;
+  text-align: center;
+  --width: 1325/100;
+  --height: 627/100;
+}
+.bg {
+  width: 1325px;
+  height: 627px;
+}
+.gameBack {
+  width: 1325px;
+  height: 627px;
+  position: absolute;
+  display: grid;
+  place-content: center;
+}
+.sky {
+  image-rendering: pixelated;
+  width: 1325px;
+  height: 627px;
+  position: absolute;
+}
+.grnd {
+  image-rendering: pixelated;
+  width: 1325px;
+  height: 627px;
+  position: absolute;
+}
+.field1 {
+  image-rendering: pixelated;
+  aspect-ratio: 1.7;
+  height: 190px;
+  top: 250px;
+  left: 92.75px;
+  position: absolute;
+}
+.field2 {
+  image-rendering: pixelated;
+  aspect-ratio: 1.7;
+  height: 190px;
+  top: 440px;
+  left: 92.75px;
+  position: absolute;
+}
+.field3 {
+  image-rendering: pixelated;
+  aspect-ratio: 1.7;
+  height: 190px;
+  top: 250px;
+  right: 100px;
+  position: absolute;
+}
+.field4 {
+  image-rendering: pixelated;
+  aspect-ratio: 1.7;
+  height: 190px;
+  top: 440px;
+  right: 100px;
+  position: absolute;
+}
+.house {
+  image-rendering: pixelated;
+  aspect-ratio: 1.75;
+  height: 106.59px;
+  top: 125.4px;
+  right: 503.5px;
+  position: absolute;
+  transition: all 0.1s ease-in-out;
+}
+.army {
+  image-rendering: pixelated;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  aspect-ratio: 16/9;
+  height: 94.05px;
+  top: 144.21px;
+  right: 690.75px;
+  position: absolute;
+  transition: all 0.1s ease-in-out;
+}
+.army:hover {
+  cursor: pointer;
+  transform: scaleX(-1) scale(1.02);
+}
+.house:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.fields {
+  transition: all 0.1s ease-in-out;
+}
+.fields:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.textSd {
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+.container {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  gap: 2vh;
+  overflow: hidden;
+  transition: width 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+.title {
+  font-size: 50px;
+  color: rgb(121, 94, 19);
+  font-family: Bungee Spice;
+}
+.sub {
+  position: relative;
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 23px;
+  top: -33px;
+  font-style: normal;
+}
+.playButton {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background: rgb(235, 13, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(235, 13, 0, 1) 0%,
+    rgba(255, 190, 0, 1) 100%
+  );
+  font-size: 30px;
+  font-family: "Micro 5", sans-serif;
+  padding: 5px 0px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.playButton:hover {
+  transform: scale(1.051);
+  cursor: pointer;
+}
+.tutorialButton {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background: rgb(235, 13, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 149, 235) 0%,
+    rgb(117, 155, 177) 100%
+  );
+  font-size: 30px;
+  font-family: "Micro 5", sans-serif;
+  padding: 5px 0px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.tutorialButton:hover {
+  transform: scale(1.051);
+  cursor: pointer;
+}
+.aboutmeButton {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background: rgb(235, 13, 0);
+  background: linear-gradient(0deg, rgb(0, 235, 51) 0%, rgb(167, 202, 10) 100%);
+  font-size: 30px;
+  font-family: "Micro 5", sans-serif;
+  padding: 5px 0px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.aboutmeButton:hover {
+  transform: scale(1.051);
+  cursor: pointer;
+}
+.audioPlay {
+  position: absolute;
+  top: 28%;
+  image-rendering: pixelated;
+  left: 70%;
+  cursor: pointer;
+}

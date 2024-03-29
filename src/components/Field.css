@@ -1,0 +1,11 @@
+.field {
+  image-rendering: pixelated;
+  position: absolute;
+  height: 190px;
+  aspect-ratio: 1.7;
+  transition: all 0.1s ease-in-out;
+}
+.field:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
